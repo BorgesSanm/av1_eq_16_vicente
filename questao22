@@ -1,1 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int numero, soma = 0, contador = 0;
+
+    printf("Digite uma sequência de números (digite 0 para sair):\n");
+
+    do {
+        scanf("%d", &numero);
+
+        if (numero != 0) {
+            soma += numero;
+            contador++;
+            float media = (float)soma / contador;
+            printf("Número: %d, Soma com a Média: %d + %.2f = %.2f\n", numero, soma, media, numero + media);
+        }
+    } while (numero != 0);
+
+    printf("Programa encerrado.\n");
+
+    return 0;
+}
 
